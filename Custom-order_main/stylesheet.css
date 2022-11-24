@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    height: 100vh;
+    background:var(hsl(225, 100%, 94%)) url(./images/pattern-background-desktop.svg) no-repeat;
+    background-size: 100%;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+
+img{
+    max-width: 100%;
+}
+
+.card{
+    width: 350px;
+    border-radius: 0.9rem;
+    background-color: white;
+}
+.textbox span {
+
+    color: hsl(224, 23%, 55%);
+
+}
+.card > img {
+    border-top-left-radius: 0.9rem;
+    border-top-right-radius: 0.9rem;
+}
+
+.container .textbox {
+    margin: 0 auto;
+    text-align: center;
+    padding: 1rem;
+    color: hsl(223, 47%, 23%);
+}
+
+.container .textbox h1 {
+    font-size: 1.5rem;
+    font-weight: 900;
+}       
+padding-top: 1rem;
+
+.textbox > p {
+    align-items: flex-end;
+    margin-right: 3rem;
+}
+
+.annual-plan {
+    width: 280px;
+    height: 70px;
+    background-color: white;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem auto;
+    border-radius: 2rem;
+    flex-grow: 2rem;
+}
+
+.attribution {
+    font-size: 12px; text-align: center;
+    padding-top: 0.5rem;
+
+}
+.attribution a {
+    color: hsl(228, 47%, 44%);
+}
+.btn-pay {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 0..5rem;
+    background-color: hsl(245, 76%, 52%);
+    border: none;
+    color: white;
+    font-weight: 600;
+
+}
+.btn-cancel {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 0..5rem;
+    background-color: hsl(224, 23%, 55%);
+    border: none;
+    color: white;
+    font-weight: 600;
+
+}
+a {
+    text-decoration: none;
+    color: hsl(245, 76%, 52%);
+    font-weight: 700;
+}
+.annual-plan a:hover {
+
+    color: hsl(224, 23%, 55%);
+} 
+.btn-pay:hover{
+    background-color: hsl(224, 23%, 55%);
+    cursor: pointer;
+}
+
+.btn-cancel:hover{
+    background-color: hsl(245, 76%, 52%);
+    cursor: pointer;
+}
+
+@media (min-width:700px){
+    body{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: var(hsl(225, 100%, 94) url(./images/pattern-background-desktop.svg) no-repeat top center;
+    }
+
+}
