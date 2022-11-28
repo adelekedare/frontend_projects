@@ -1,0 +1,164 @@
+@import url(https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500,700&display=swap); 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color:hsl(30, 38%, 92%);
+    font-size: 14px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+.container{
+    margin: 30px auto;
+    padding:  30px ;
+    max-width: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #FFF;
+    overflow: hidden;
+    border-radius: 10px;
+    
+}
+
+.image img{
+    max-width: 100%;
+    display:inherit;
+}
+
+.for_text{
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+h6.text_title{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 13px;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+
+}
+.text_head{
+    font-family: 'Fraunces', serif;
+    font-size: 34px;
+    line-height: 1em;
+    color: hsl(212, 21%, 14%);
+
+
+}
+
+p.text_desc{
+    color: hsl(228, 12%, 48%);
+    line-height: 1.6em;
+}
+
+.pricing{
+    display: flex;
+    align-items: center;    
+}
+
+p.discount_price{
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    font-size: 25px;
+    padding-right: 25px;
+
+}
+p.normal_price{
+    color: hsl(228, 12%, 48%);
+    font-size: 15px;
+    text-decoration: line-through;
+}
+button.btn{
+background-color: hsl(158, 36%, 37%);
+border: none;
+padding: 12px 0;
+border-radius: 12px;
+color: white;
+font-size: 14px;
+font-weight: 700;
+cursor: pointer;
+transition: background-color .3s ease;
+width: 100%;
+
+}
+button.btn:hover{
+    background-color: hsl(158, 36%, 37%);
+}
+
+button.btn img{
+    padding-right: 7px;
+}
+
+@media only screen and (max-width: 628px){
+    .image img{
+        max-height: 500px;
+        width: 100%;
+        object-fit: cover;
+
+    }
+
+    .for_text{
+        display: block;
+    }
+
+    c{
+        padding-bottom: 23px;
+    }
+}
+
+
+@media only screen and (max-width: 628px){
+    .container{
+        margin: 15px auto;
+        padding: 0 15px;
+
+    }
+    .image img{
+        max-height: 290px;
+    }
+    .for_text{
+        padding: 24px;
+
+    }
+    h6.text_title, h2.text_head, p.text_desc, .pricing{
+        padding-bottom: 16px;
+    }
+
+    h2.text_head{
+        font-size: 28px;
+    }
+
+    p.text_desc{
+        font-size: 12px;
+    }
+    p.discount_price{
+        font-size: 23px;
+    }
+    button.btn{
+        padding: 12px 0;
+        font-size: 13px;
+    }
+
+}
+
+
+
+
+
+
+
